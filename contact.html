@@ -8,14 +8,47 @@
     <link rel="stylesheet" href="screen.css">
   </head>
   <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Heading</h1>
+    <main>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <form>
+            <section>
+                <label>Fill out this form to get in contact with me:</label>
+            </section>
+            <section>
+                <label>Name:
+                    <input type="text">
+                </label>
+            </section>
+            <section>
+                <label>Email Address:
+                    <input type="email">
+                </label>
+            </section>
+            <section>
+                <label>Reason for contact:
+                    <select>
+                        <option>Saying hi</option>
+                        <option>Looking for a contractor</option>
+                        <option>Interested in an interview</option>
+                     </select>
+                </label>
+            </section>
+            <section>
+                <label for="open-comments">Comments:</label><br>
+                <textarea id="open-comments" name="open-comments" rows="6" cols="100"></textarea>
+            </section>
+            <section>
+                <input type="submit" value="submit">
+            </section>
+        </form>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
